@@ -4,25 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Euclid Algorithm with Steps</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Euclid Algorithm for GCD (with Steps)</h1>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Euclid Algorithm for GCD (with Steps)</h1>
 
-    <label for="num1">Number 1:</label>
-    <input type="number" id="num1" />
-    <br /><br />
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="num1" class="form-label">Number 1:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="num1"
+              placeholder="Enter first number"
+            />
+          </div>
 
-    <label for="num2">Number 2:</label>
-    <input type="number" id="num2" />
-    <br /><br />
+          <div class="mb-3">
+            <label for="num2" class="form-label">Number 2:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="num2"
+              placeholder="Enter second number"
+            />
+          </div>
 
-    <button onclick="calculateGCD()">Calculate GCD</button>
+          <div class="d-grid">
+            <button class="btn btn-primary" onclick="calculateGCD()">
+              Calculate GCD
+            </button>
+          </div>
 
-    <h3>Result:</h3>
-    <p id="result"></p>
+          <h3 class="mt-4">Result:</h3>
+          <p id="result" class="lead"></p>
 
-    <h3>Steps:</h3>
-    <ul id="steps"></ul>
+          <h3>Steps:</h3>
+          <ul id="steps" class="list-group"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
     <script src="script.js"></script>
   </body>
